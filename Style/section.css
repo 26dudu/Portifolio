@@ -6,7 +6,7 @@ flex-direction: column;
 align-items: center;
 height: 35vh;
 width: 80%;
-background-color: #64799bbe;;
+background-color: #495870;
 margin-left: auto;
 margin-right: auto;
 }
@@ -16,14 +16,13 @@ margin-right: auto;
 font-size: 30px;
 font-weight: 100px;
 align-items: start;
-margin-top: -1px;
-position: relative;
+margin-bottom: -2vh;
 }
 
 
 #sobreMim>h3::before{
 content: '';
-bottom: 0;
+bottom: 18vh;
 position: absolute;
 left: 50%;
 transform: translateX(-50%);
@@ -32,7 +31,7 @@ height: 3px;
 background: #007bff;}
 
 
-#sobreMim>div {margin-top: 4%;
+#sobreMim>div {margin-top: 10vh;
 font-size: 18px;
 text-align: center;
 align-items: center;
@@ -40,5 +39,12 @@ justify-content: center;
 }
 
 
+@media (max-width:950px){
+    #sobreMim>h3::before{
+bottom: 1vh;
+}}
 
-
+@media (max-width:500px){
+    #sobreMim>h3::before{
+bottom: -4.5vh;
+}}
