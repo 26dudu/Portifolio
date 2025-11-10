@@ -1,0 +1,50 @@
+section {margin-top: 15vh;}
+
+#sobreMim {
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 35vh;
+width: 80%;
+background-color: #495870;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+#sobreMim>h3 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+font-weight: 100px;
+align-items: start;
+margin-bottom: -2vh;
+}
+
+
+#sobreMim>h3::before{
+content: '';
+bottom: 18vh;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 50px;
+height: 3px;
+background: #007bff;}
+
+
+#sobreMim>div {margin-top: 10vh;
+font-size: 18px;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+
+@media (max-width:950px){
+    #sobreMim>h3::before{
+bottom: 1vh;
+}}
+
+@media (max-width:500px){
+    #sobreMim>h3::before{
+bottom: -4.5vh;
+}}

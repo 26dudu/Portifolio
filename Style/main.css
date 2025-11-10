@@ -1,0 +1,87 @@
+main {display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+margin-top: 150px;
+align-items: center;}
+
+#MyProfile {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+#fé {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+}
+
+
+
+.flex-fe{display: flex;
+flex-direction: column;
+
+}
+
+
+.flex-fe>span {margin-top: -2vh;
+font-size: 30px;}
+
+
+.flex-fe>h1{margin-left: 25.5vh;
+margin-top: -7vh;
+font-size: 50px;
+}
+
+
+.title-full::before {
+    content: "Full-stack";
+    animation: back 6s infinite;
+    height: 100%;
+    background: 100%;
+}
+
+
+.title-full{display: inline-block;
+margin: 0;
+color: rgb(20, 28, 104);
+}
+
+
+@keyframes escrita {
+    0%,
+    50%,
+    100% {border-right: 2px solid transparent;
+    }
+    25%,
+    75% {border-right: 2px solid var(--cor-p1);
+    }
+}
+
+
+@keyframes back {
+    0%,
+    20% {
+        content: "Back-end";
+    }
+    41%,
+    60% {
+        content: "Front-end";
+    }
+}
+
+
+@media (max-width:949px)
+{
+    main{display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 150px;
+        align-items: center;
+       }
+       #fé {justify-self: center;}
+}
