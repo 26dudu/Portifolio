@@ -1,4 +1,15 @@
-/* From Uiverse.io by codebykay101 */ 
+#Skills {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Skills>div {display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .container {
     padding-top: 10vh;
     position: relative;
@@ -6,7 +17,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10%;
+    max-width: 1000px;
   }
   
   .container .glass {
@@ -23,8 +34,9 @@
     border-radius: 10px;
     backdrop-filter: blur(10px);
     margin-left: 5vh;
-    margin-right: 1vh;
+    margin-right: 5vh;
     margin-bottom: 10vh;
+    
   }
   
  
@@ -48,6 +60,7 @@
 
 
 #Skills {
+
 margin-top: 5vh;
 background-color: #64799bbe;
 height: 70vh;
@@ -56,14 +69,39 @@ width: 70%;}
 
 @media (max-width:1270px){
   #Skills {
-height: 100vh;
+height: 120vh;  
 }
+.container {
+  max-width: 600px;
+}
+}
+
+
+@media (max-width:820px){
+  #Skills {
+height: 180vh;
+}
+  .container {
+    max-width: 500px;
+  }
+  .container .glass {
+    margin-bottom: 5vh;
+  }
+  
 }
 
 @media (max-width:750px){
   #Skills {
 height: 170vh;
 }
+
+  .container {
+    max-width: 500px;
+  }
+  .container .glass {
+    margin-bottom: 5vh;
+  }
+  
 }
 
   
